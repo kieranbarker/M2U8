@@ -9,7 +9,7 @@ class Employee:
             raise ValueError("Percentage must be positive")
 
         # otherwise, calculate the increase
-        increase = self.salary * by_percent / 100
+        increase_base_by = self.salary * by_percent / 100
 
         # and add the increase to the base salary
-        self.salary += increase
+        self.salary += increase_base_by
