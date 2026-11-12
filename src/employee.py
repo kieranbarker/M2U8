@@ -3,6 +3,13 @@ class Employee:
         self.name = name
         self.salary = salary
 
-    # TODO
     def raise_salary(self, by_percent: float) -> None:
-        pass
+        # if by_percent is not positive, raise an error
+        if by_percent <= 0:
+            raise ValueError("Percentage must be positive")
+
+        # otherwise, calculate the increase
+        increase = self.salary * by_percent / 100
+
+        # and add the increase to the base salary
+        self.salary += increase
