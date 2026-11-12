@@ -12,4 +12,4 @@ class Employee:
         increase_base_by = self.salary * by_percent / 100
 
         # and add the increase to the base salary
-        self.salary += increase_base_by
+        self.salary = round(self.salary + increase_base_by)

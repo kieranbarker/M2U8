@@ -11,4 +11,4 @@ def test_raise_salary():
     fry_cook.raise_salary(3.3)
 
     # Assert
-    assert fry_cook.salary == pytest.approx(30_990)  # 30989.999999999996
+    assert fry_cook.salary == 30_990
